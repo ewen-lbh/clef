@@ -56,3 +56,13 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# IDEs
+.vscode/*
+.idea/*
+
+# env dir
+env/*
+
+# dotenv
+.env

@@ -1,0 +1,8 @@
+chardet==3.0.4
+Django==2.2.2
+pypugjs==5.8.1
+python-dotenv==0.10.3
+pytz==2019.1
+rosetta==0.3
+six==1.12.0
+sqlparse==0.3.0
