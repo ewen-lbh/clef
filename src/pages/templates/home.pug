@@ -1,0 +1,11 @@
+{% extends 'base.pug' %}
+{% load i18n static %}
+{% block title %} {{page_title}} {% endblock title %}
+{% block content %}
+
+img.logo(src="{% static 'pages/images/logo-dark.png' %}", alt="Clef")
+form.searchbar(action="/search", method="get")
+    input(type="text")
+
+    
+{% endblock content %}

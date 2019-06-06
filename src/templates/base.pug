@@ -1,0 +1,10 @@
+{% load static i18n %}
+html(lang="en")
+    head
+        include includes/head.pug
+        title {% block title %} {% endblock %}
+    body
+        include includes/menu.pug
+        {% block content %}
+        {% endblock content %}
+        include includes/footer.pug

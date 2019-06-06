@@ -1,0 +1,15 @@
+{% load static i18n %}
+//base meta tags
+meta(content='text/html; charset=UTF-8', http-equiv='Content-Type')
+meta(charset='UTF-8')
+meta(content='width=device-width, initial-scale=1.0', name='viewport')
+meta(content='ie=edge', http-equiv='X-UA-Compatible')
+
+//stylesheet
+link(rel="stylesheet", href='{% static "pages/styles/style.css"%}?{% now "U" %}')
+
+//fonts
+link(href='https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,600', rel='stylesheet')
+
+//dependencies
+script(crossorigin='anonymous', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', src='https://code.jquery.com/jquery-3.4.1.min.js')
