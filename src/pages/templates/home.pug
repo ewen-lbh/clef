@@ -5,7 +5,11 @@
 
 img.logo(src="{% static 'pages/images/logo-dark.png' %}", alt="Clef")
 form.searchbar(action="/search", method="get")
-    input(type="text")
+    input(
+        name='q'
+        type="text" 
+        onfocus="$('img.logo').attr('src','{% static 'pages/images/logo-color.png' %}')"
+        onblur="$('img.logo').attr('src','{% static 'pages/images/logo-dark.png' %}')")
 
     
 {% endblock content %}
