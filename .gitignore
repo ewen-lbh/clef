@@ -69,4 +69,4 @@ env/*
 
 # SASS compiler cache files
 **.sassc
-**.sass-cache/*
+.sass-cache/*
