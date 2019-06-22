@@ -11,18 +11,19 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import environ
+from dotenv import load_dotenv
 
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT_DIR = environ.Path(__file__) - 2
 
-env = environ.Env()
+# Load dotenv
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-env_file = ROOT_DIR('SECRET_KEY.env')
+env_file = BASE_DIR('.env')
 env.read_env(env_file)
 SECRET_KEY = env.str('DJANGO_SECRET_KEY')
 
