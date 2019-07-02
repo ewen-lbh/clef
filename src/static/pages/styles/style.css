@@ -1,49 +1,96 @@
 * {
-  font-family: "Roboto Mono"; }
+  font-family: 'Roboto Mono';
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #28e1ae;
+}
 
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 .logo {
   pointer-events: none;
   position: relative;
   margin-left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 10 !important;
-  height: 25%; }
+  height: 25%;
+}
 
 .searchbar {
   margin-top: -110px;
-  margin-left: 50%;
-  transform: translateX(-50%); }
-  .searchbar input {
-    border: none;
-    background: #eee;
-    height: 50px;
-    width: 50vw;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 15px; }
-    .searchbar input:focus {
-      outline: none;
-      -moz-outline: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchbar input {
+  border: none;
+  background: #eee;
+  height: 50px;
+  width: 25vw;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.searchbar input:focus {
+  outline: none;
+  -moz-outline: none;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.array li {
+  display: inline-block;
+}
 
 .menu ul {
   padding-left: 0;
   list-style: none;
-  text-align: center; }
+  text-align: center;
+}
+
 .menu li {
-  display: inline-block; }
+  display: inline-block;
+}
+
 .menu a {
   font-size: 2em;
   text-decoration: none;
   color: #000000;
   margin-left: 20px;
-  border-bottom: 3px solid #28e1ae; }
-  .menu a:hover {
-    border-bottom: 3px dashed #28e1ae; }
+  border-bottom: 3px solid #28e1ae;
+}
 
+.menu a:hover {
+  border-bottom: 3px dashed #28e1ae;
+}
 /*# sourceMappingURL=style.css.map */

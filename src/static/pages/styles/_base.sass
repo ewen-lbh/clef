@@ -1,6 +1,12 @@
 *
     font-family: 'Roboto Mono'
 
+a
+    text-decoration: none
+    color: #000
+    &:hover
+        color: #28e1ae
+
 h1
     text-align: center
 
@@ -17,16 +23,26 @@ h1
 
 .searchbar
     margin-top: -110px
-    margin-left: 50%
-    transform: translateX(-50%)
+    display: flex
+    align-items: center
+    justify-content: center    
     input
         border: none
         background: #eee
         height: 50px
-        width: 50vw
+        width: 25vw
         padding: 10px 20px
         border-radius: 10px
-        font-size: 15px
+        font-size: 20px
         &:focus
             outline: none
             -moz-outline: none
+
+.center
+    display: flex
+    align-items: center
+    justify-content: center
+
+ul.array
+    li
+        display: inline-block

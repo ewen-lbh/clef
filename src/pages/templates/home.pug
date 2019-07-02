@@ -4,12 +4,12 @@
 {% block content %}
 
 img.logo(src="{% static 'pages/images/logo-dark.png' %}", alt="Clef")
-form.searchbar(action="/search", method="get")
-    input(
-        name='q'
-        type="text" 
-        onfocus="$('img.logo').attr('src','{% static 'pages/images/logo-color.png' %}')"
-        onblur="$('img.logo').attr('src','{% static 'pages/images/logo-dark.png' %}')")
-
+form.searchbar(action="{% url 'home' %}", method="get")
+    input(name='q' type="text")
+.center
+    ul.array
+        li
+            i.zmdi.zmdi-filter.zmdi-hc-lg
+            a(href="?sort=blablablab") lol
     
 {% endblock content %}
